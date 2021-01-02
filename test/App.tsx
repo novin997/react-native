@@ -3,6 +3,7 @@ import * as Font from "expo-font";
 import { NavigationContainer } from "@react-navigation/native";
 import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
 import Calculator from "./Yugioh/Calculator";
+import Map from "./Map/Map";
 import { Ionicons } from "@expo/vector-icons";
 
 import HomeScreen from "./HomeScreen/HomeScreen";
@@ -26,6 +27,7 @@ export default function App() {
       <Tab.Navigator>
         <Tab.Screen name="Home" component={HomeScreen} />
         <Tab.Screen name="Calculator" component={Calculator} />
+        <Tab.Screen name="Map" component={Map} />
       </Tab.Navigator>
     </NavigationContainer>
   );
